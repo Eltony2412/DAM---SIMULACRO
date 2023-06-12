@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //SE HACE REFERENCIA AL BOTON
         b_enviar = findViewById(R.id.button_enviar);
 
         //evento click
