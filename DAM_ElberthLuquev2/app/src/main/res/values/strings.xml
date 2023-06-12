@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">DAM_ElberthLuquev2</string>
+    <string name="Button_enviar">ENVIAR</string>
+    <string name="radioButton_IS">Ingenieria de Sistemas</string>
+    <string name="radioButton_IAm">Ingenieria Ambiental</string>
+    <string name="radioButton_M">Ingenieria Mecanica</string>
+    <string name="radioButton_Adm">Administracion</string>
+    <string name="checkBox_R">Radio</string>
+    <string name="checkBox_I">Internet</string>
+    <string name="checkBox_A">Amigo</string>
+    <string name="checkBox_P">Publicidad</string>
+    <string name="text_Titulo">EXAMEN DE ADMISIÓN 2023</string>
+    <string name="text_SubTitulo">Formulario de Registro</string>
+    <string name="text_Apellido">Apellidos y Nombres</string>
+    <string name="text_Correo">Correo Electronico</string>
+    <string name="text_Clave">Clave</string>
+    <string name="text_Naciminiento">Naciminiento</string>
+</resources>

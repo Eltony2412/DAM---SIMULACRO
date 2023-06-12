@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#275087"
+    android:backgroundTint="#265087"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="#265087"
+        android:text="@string/text_Titulo"
+        android:textColor="#FFFDFD"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_Subtitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="30dp"
+        android:background="#265087"
+        android:text="@string/text_SubTitulo"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/text_Ape"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#265087"
+        android:drawableLeft="@drawable/baseline_person_24"
+        android:ems="10"
+        android:hint="@string/text_Apellido"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_Subtitulo" />
+
+    <EditText
+        android:id="@+id/text_correo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#265087"
+        android:drawableLeft="@drawable/baseline_email_24"
+        android:ems="10"
+        android:hint="Correo Electronico"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/text_Ape"
+        app:layout_constraintStart_toStartOf="@+id/text_Ape"
+        app:layout_constraintTop_toBottomOf="@+id/text_Ape" />
+
+    <EditText
+        android:id="@+id/text_Contra"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#265087"
+        android:drawableLeft="@drawable/baseline_password_24"
+        android:ems="10"
+        android:hint="@string/text_Clave"
+        android:inputType="textPassword"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/text_correo"
+        app:layout_constraintStart_toStartOf="@+id/text_correo"
+        app:layout_constraintTop_toBottomOf="@+id/text_correo" />
+
+    <EditText
+        android:id="@+id/text_Nacim"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#265087"
+        android:drawableLeft="@drawable/baseline_calendar_today_24"
+        android:ems="10"
+        android:hint="@string/text_Naciminiento"
+        android:inputType="date"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/text_Contra"
+        app:layout_constraintStart_toStartOf="@+id/text_Contra"
+        app:layout_constraintTop_toBottomOf="@+id/text_Contra" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#265087"
+        android:text="Carrera"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/text_Nacim"
+        app:layout_constraintTop_toBottomOf="@+id/text_Nacim" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+        <RadioButton
+            android:id="@+id/radioButton_IS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:backgroundTint="#265087"
+            android:text="@string/radioButton_IS"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/radioButton_IA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:backgroundTint="#265087"
+            android:text="@string/radioButton_IAm"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/radioButton_M"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:backgroundTint="#265087"
+            android:text="@string/radioButton_M"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/radioButton_Adm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:backgroundTint="#265087"
+            android:text="@string/radioButton_Adm"
+            android:textColor="@color/white" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="154dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="20dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#265087"
+        android:text="¿Por qué medio se enteró de la convocatoria?"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/text_Nacim"
+        app:layout_constraintTop_toBottomOf="@+id/text_Nacim" />
+
+    <CheckBox
+        android:id="@+id/checkBox_Ra"
+        android:layout_width="140dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/white"
+        android:backgroundTint="#265087"
+        android:text="@string/checkBox_R"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <CheckBox
+        android:id="@+id/checkBox_I"
+        android:layout_width="140dp"
+        android:layout_height="43dp"
+        android:background="@color/white"
+        android:backgroundTint="#265087"
+        android:text="@string/checkBox_I"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_Ra" />
+
+    <CheckBox
+        android:id="@+id/checkBox_A"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:backgroundTint="#265087"
+        android:text="@string/checkBox_A"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_I" />
+
+    <CheckBox
+        android:id="@+id/checkBox_P"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:backgroundTint="#265087"
+        android:text="@string/checkBox_P"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_A" />
+
+    <Button
+        android:id="@+id/button_enviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="#f8b739"
+        android:drawableLeft="@drawable/baseline_send_24"
+        android:text="@string/Button_enviar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="7dp"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/logountels" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
